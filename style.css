@@ -1,0 +1,270 @@
+h1{
+    float: inline-start;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: green;
+
+}
+
+
+h2 {
+    float: none;
+    text-align: center;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: green;
+}
+p {
+    float: inline-start;
+    text-align: justify;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px
+}
+.foot a {
+    
+    text-align: center;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.foot a:hover {
+    background-color: blueviolet ;
+  }
+
+h4 {
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: green;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+
+.navbar {
+    width: 100%;
+    background-color:blue   ;
+overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+     text-align: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px
+    
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  /* Current/active navbar link */
+  a.active {
+    display: inline-block;
+  }
+  
+  
+  
+  .log a,button,form{
+    display: inline-block;
+    font-weight: bold;
+    
+    
+    
+  }
+  
+  #LO {
+    float: right;
+    text-align: right;
+    
+    
+    font-weight: bold;
+    background-color: chartreuse;
+    
+  }
+  
+  h3 {
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 25p;
+    background-color: green;
+    
+
+  }
+  img {
+    width: 350px; height:315px ;
+  }
+  footer {
+    text-align: justify;
+    background-color: black;
+  }
+  hr  {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+  }
+input {
+    text-align: left;
+}
+
+* Style the navigation menu */
+#myMenu {
+  list-style-type: none;
+  padding: 5px;
+  margin: 0;
+}
+
+/* Style the navigation links */
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color:yellowgreen;
+}
+h5{
+    float: none;
+    text-align: center;
+    padding: 8px;
+    color:black;
+    text-decoration: none;
+    font-size: 30px;
+    
+
+}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+/* Set a style for all buttons*/ 
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+
+
+label {
+  display: block;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+  margin: .4rem 0;
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+#sidebar {
+  position: fixed;
+  width: 30%;
+  height: 100%;
+  left: 30%;
+  background-color: black;
+}
+#sidebar li {
+color: #ddd;
+font-size:30px ;
+padding: 30px;
+border-bottom: 1px solid gray;
+text-align: center;
+}
+.toggle-btn {
+  position: absolute;
+  left:105% ;
+  top: 15px;
+}
+.toggle-btn span{
+  display: block;
+  background-color: black;
+  width: 30px;
+  height: 5px;
+  margin: 3px;
+}
+#sidebar.active{
+  left: 0;
+}
