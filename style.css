@@ -111,7 +111,7 @@ overflow: auto;
 
   }
   img {
-    width: 350px; height:315px ;
+    width: 560px; height:315px ;
   }
   footer {
     text-align: justify;
@@ -175,7 +175,7 @@ input[type=text]:focus, input[type=password]:focus {
   outline: none;
 }
 /* Set a style for all buttons*/ 
-button {
+/*button {
   background-color: #04AA6D;
   color: white;
   padding: 14px 20px;
@@ -184,7 +184,7 @@ button {
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
-}
+}*/
 
 button:hover {
   opacity:1;
