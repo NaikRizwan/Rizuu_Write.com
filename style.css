@@ -52,6 +52,10 @@ h4 {
 body{
     background-color: whitesmoke;
 }
+.responsive {
+  width: 100%;
+  height: auto;
+}
 
 
 .navbar {
@@ -62,11 +66,15 @@ overflow: auto;
   
   /* Navbar links */
   .navbar a {
-     text-align: center;
+     text-align:justify;
+     
     padding: 10px;
     color: white;
     text-decoration: none;
-    font-size: 15px
+    font-size: 15px;
+    border-bottom: #000;
+    display: inline-block;
+
     
   }
   
@@ -114,7 +122,8 @@ overflow: auto;
 
   }
   img {
-    width: 360px; height:275px ;
+    width: auto;
+     height:275px ;
     }
   footer {
     text-align: justify;
@@ -145,7 +154,9 @@ input {
   padding: 12px;
   text-decoration: none;
   color: black;
-  display: block
+  display: block;
+  font-weight: bold;
+  
 }
 
 #myMenu li a:hover {
