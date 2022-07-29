@@ -7,27 +7,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scale=no"/>
     <title>RIZUU WRITE | HOME</title>
     <link rel="stylesheet" href="style.css">
+    <script src="nav.js"></script>
     <script type="text/javascript">
         function togglemenu(){
             document.getElementById('sidebar').classList.toggle('active');
         }
     </script>
 </head>
-
 <body>
 
+
+    <nav class="navbar">
+        <div class="content">
+          <div class="logo">
+          <!--  <a href="#">HOME</a>-->
+          <h1 >Rizuu Write</h1>
+          </div>
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Poets.html">poets</a></li>
+            <li><a  class="tw" href="two_line.html">Two Line Shayari</a></li>
+            <li><a class="tw"  href="gazel.html">Ghazel</a></li>
+            <li><a class="tw" href="image.html">Image Shayari</a></li>
+            <li><a class="tw"  href="veido.html">Veido Shayari</a></li>
+            <li><a class="tw" href="#">Urdu Shayari</a></li>
+            <li><a class="tw" href="quotes.html">Quotes</a></li>
+            <li><a class="tw" href="#">Song Lyarics</a></li>
+            <li><a class="tw" href="login.html">Login</a></li>
+            
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="banner"></div>
+      <div class="about">
+        <div class="content">
+          </div>
+      </div>
+    
+      <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          navbar.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+          body.classList.remove("disabled");
+          navbar.classList.remove("show");
+          menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+          this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+      </script>
+    
+<br>
     <header>
-        <h1>Rizuu write</h1>
+       <!-- <h1>Rizuu write</h1>-->
         <form action="https://naikrizwan.github.io/Rizuu_Write.com/
         " method="get" class="log">
 
             
-            <input type="search" id="site-search" placeholder="search" name="q">
+            <input type="search" id="site-search" placeholder="search here" name="q">
 
             <button class="log">Search</button>
         </form>
-        <a class="log" id="LO" href="login.html"><button>Login</button></a>
-  
+        
 
 
 
@@ -35,7 +89,7 @@
 
     
 
-    <div class="navbar">
+   <!-- <div class="navbar">
    <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
      <a class="active" href="Poets.html"> <i class="fp"></i>Poets </a>
       <a class="active" href="two_line.html"> <i class="ft"></i>Two Lines </a>
@@ -49,7 +103,7 @@
     
     <a class="active" href="#"><i class="fa fa-fw fa-envelope"></i> Song Lyricis</a>
   
-</div>
+</div>-->
 
 
     <main>
@@ -72,24 +126,24 @@
             <p><i><q> sath bato to batoon ga dard kaya hai
 
                         <br />
-                        Aab youn dour sa pocha ga to kaharyar he batoon ga
+                        Aab youn dour sa pocha ga to kaharyat he batoon ga
                     </q>
                 </i></p>
 
 
             <h3>Weekly Image Poetry(shayari)</h3>
 
-            <img src="1656942980799.jpg" alt="Galib" class="responsive">
-            <img src="1658755629933.jpg" alt="image"  class="responsive">
+            <img class="imge" src="1656942980799.jpg" alt="Galib" class="responsive">
+            <img class="imge" src="1658755629933.jpg" alt="image"  class="responsive">
 
             <h4>Youtube Poetry veido </h4>
 
 
-            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/jNf2praYO3g"
+            <iframe class="veido" width="560" height="315px" src="https://www.youtube.com/embed/jNf2praYO3g"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
-            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/i7zbMF3sOE8"
+            <iframe class="veido" width="560" height="315px" src="https://www.youtube.com/embed/i7zbMF3sOE8"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
